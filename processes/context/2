@@ -1,0 +1,8 @@
+- Write a C program that performs an infinite loop.
+The program should not output anything to the standard streams while running.
+When the Ctrl+C key is pressed, the program should terminate and print the number of 
+iterations it was able to perform in the format "Iterations: XXX".
+
+- Example:
+$ ./infinite-loop
+^CIterations: 100500100500
