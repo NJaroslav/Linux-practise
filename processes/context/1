@@ -1,0 +1,1 @@
+In the system, the process a.out is running. Using the command shell, send the SIGUSR1 signal to this process.
