@@ -1,0 +1,13 @@
+Using the POSIX Threads library, 
+implement the following demo program in C.
+Three threads simultaneously write characters 
+to the standard output without stopping: 
+the first thread writes the letter a, 
+the second thread writes the letter b, 
+the third thread writes the letter c.
+Each thread should print exactly 10000 of letters and complete, 
+the main thread should wait for the working threads to complete.
+Compare if the result is different when using different output methods:
+
+-printf("x");
+-write(STDOUT_FILENO, "x", 1).
