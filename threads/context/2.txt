@@ -1,0 +1,54 @@
+You are given incorrect code in C.
+Using synchronization primitives, organize the alternating work of two threads
+so that the sequence 0, 1, 2, 3, 4, 5, ... is obtained. 
+For simplicity, in this task, it is not necessary to implement correct error 
+handling when calling pthread functions. Errors, for example, 
+when taking a lock on a mutex usually indicate that something 
+has gone seriously wrong in the system, and it is unlikely that
+calling abort() will be the best solution.
+
+
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX 1000
+
+struct TContext {
+    const char* Name;
+    int* Counter;
+    int Mod;
+};
+
+void* ThreadFunc(void* arg) {
+    struct TContext* ctxt = arg;
+    int* counter = ctxt->Counter;
+    fprintf(stderr, "This is %s thread\n", ctxt->Name);
+    while (*counter < MAX) {
+        if (*counter % 2 == ctxt->Mod) {
+            printf("%d ", (*counter)++);
+        }
+    }
+    pthread_exit(0);
+}
+
+int main()
+{
+    pthread_t t1;
+    pthread_t t2;
+
+    int counter = 0;
+    struct TContext ctxt1 = {"even", &counter, 0};
+    struct TContext ctxt2 = {"odd", &counter, 1};
+    pthread_create(&t1, 0, ThreadFunc, &ctxt1);
+    pthread_create(&t2, 0, ThreadFunc, &ctxt2);
+
+    pthread_join(t1, 0);
+    pthread_join(t2, 0);
+    printf("\n");
+    return 0;
+}
+
+
+
+
