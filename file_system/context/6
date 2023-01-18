@@ -1,0 +1,8 @@
+The directory dirA, which contains files and subdirectories, is specified. 
+Copy the directory dirA to the directory dirB as accurately as possible: 
+the directory structure should be reproduced, the contents, user-owner,
+group-owner, permissions, and modification time should match for each 
+file of the original and the copy.
+
+Note
+It is allowed to use sudo. The system on the server is configured so that the password is not required.
