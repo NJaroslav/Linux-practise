@@ -1,0 +1,5 @@
+In the current directory there is a symbolic link called symlink.
+
+Output:
+In the first line, output the value of the link in the form it is stored.
+In the second line, output the absolute path to the file that the link points to.
