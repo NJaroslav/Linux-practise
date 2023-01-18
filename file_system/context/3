@@ -1,0 +1,3 @@
+Given two directories - dirA and dirB.
+Copy all contents from the first directory to the second one using a single cp command.
+Files previously located in dirB should be preserved. It is guaranteed that the file names are different.
