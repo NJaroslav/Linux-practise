@@ -1,0 +1,9 @@
+In the current directory, there is a file named file.
+Output the file permissions in numerical form (three octal digits)
+followed by a space and then in letter form (ten characters,
+each of which is r, w, x, or -).
+
+Example: 640 -rw-r-----
+
+
+
