@@ -1,0 +1,9 @@
+Create files in the current directory with the following names:
+1) ~
+2) -
+3) --
+4) *
+5) C:\Windows\explorer.exe (this is the name of one file!)
+
+Note: The file name C:\Windows\explorer.exe is not a valid file name on unix-like systems, 
+it would not work because of the ":" character.
