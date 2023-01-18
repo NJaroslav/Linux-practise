@@ -1,0 +1,6 @@
+Write the string "The quick brown fox jumps over the lazy dog."
+(the string ends with a newline character) into a file named file.txt.
+
+Create a symbolic link named link1.txt that points to file.txt.
+
+Then create a hard link named link2.txt that points to the symbolic link link1.txt.
