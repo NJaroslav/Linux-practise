@@ -1,0 +1,15 @@
+Create a directory hierarchy with a single call to the utility:
+
+$ tree
+.
+├── another
+│   └── long
+│       └── path
+├── very
+│   └── very
+│       └── very
+│           └── long
+│               └── path
+└── yet
+    └── another
+        └── path
