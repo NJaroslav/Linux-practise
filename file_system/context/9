@@ -1,0 +1,6 @@
+Using the find utility, find all symbolic links in the /etc directory that point to the file /etc/init.d/cron.
+If the current user does not have access to any files or directories, they should be ignored. 
+No need to use sudo. Do not print any error messages such as "Permission denied."
+
+Output:
+Output the absolute paths to the symbolic links in any order, one per line.
