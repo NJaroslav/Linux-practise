@@ -1,0 +1,9 @@
+Write a script that takes one argument - the file path. 
+The script should output the string "Hello, world!" to the file. 
+If an argument is not passed, the default file name is "readme.txt". 
+If the file already exists, it will be overwritten. 
+If the file does not exist, a new one will be created.
+
+
+
+
