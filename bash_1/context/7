@@ -1,0 +1,26 @@
+Write a script called fdcount.sh.
+The script takes one argument - the directory path. 
+The script outputs the total number of regular files and subdirectories 
+in the specified directory (recursively). When counting subdirectories, 
+the directory itself is also taken into account. 
+There is no need to click on symbolic links.
+
+The output is formatted as shown in the example. 
+It is necessary to substitute one or another form 
+of the word according to the number of found 
+(0 files, 1 file, 2 files).
+In order to avoid code duplication, put the logic in a shell function.
+
+
+Example:
+$ ./fdcount.sh .
+1 file
+1 directory
+$ mkdir subdir
+$ ./fdcount.sh .
+1 file
+2 directories
+$ touch subdir/file
+$ ./fdcount.sh .
+2 files
+2 directories
