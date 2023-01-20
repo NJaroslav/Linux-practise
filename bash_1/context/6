@@ -1,0 +1,17 @@
+A natural number is prime if it has exactly two natural divisors.
+Write a script that takes one argument - a number from 0 to 2^{31}-1 inclusive - 
+and determines whether that number is prime. 
+If the number is prime, the output code should be 0, 
+otherwise 1.
+
+Example:
+$ ./isprime.sh 1; echo $?
+1
+$ ./isprime.sh 2; echo $?
+0
+$ ./isprime.sh 3; echo $?
+0
+$ ./isprime.sh 4; echo $?
+1
+$ ./isprime.sh 1000000007; echo $?
+0
