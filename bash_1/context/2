@@ -1,0 +1,4 @@
+Write a script that outputs to stderr the value of
+the environment variable PATH in this form (notice the quotes):
+
+*** Value of '$PATH' is "/usr/local/bin:/usr/bin:/bin" ***
