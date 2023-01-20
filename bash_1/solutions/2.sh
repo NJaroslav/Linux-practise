@@ -1,1 +1,1 @@
-echo "*** Value of \$PATH is $PATH ***"
+echo "*** Value of '\$PATH' is $PATH ***"
