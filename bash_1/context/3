@@ -1,0 +1,24 @@
+Write an stdswap.sh script that executes the above command (with all arguments)
+while swapping the stdout and stderr streams
+(all standard output is redirected to the error output stream, and vice versa).
+
+Example:
+Let's take an example. Suppose the main.py code is in Python:
+
+-main.py-
+#!/usr/bin/env python3
+import sys
+
+print('Arguments:', sys.argv, file=sys.stdout)
+print('Executable path:', sys.executable, file=sys.stderr)
+-end-
+
+The script should work like this:
+
+$ ./main.py "hello, world!" --help 1 -f 2 >/dev/null
+
+Executable path: /usr/bin/python3
+
+$ ./stdswap.sh ./main.py "hello, world!" --help 1 -f 2 >/dev/null
+
+Arguments: ['./main.py', 'hello, world!', '--help', '1', '-f', '2']
