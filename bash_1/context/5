@@ -1,0 +1,8 @@
+Write aplusb.sh script that solves the classical problem a + b.
+
+Input:
+The standard input is two integers a and b separated by a space 
+(-2^{63} <= a,b <= 2^{63}-1).
+
+Output:
+the sum of these two numbers to the standard output.
