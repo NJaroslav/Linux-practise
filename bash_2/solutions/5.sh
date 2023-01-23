@@ -9,7 +9,3 @@ for file in $files; do
   sed -i "" "s/$UTF8ToWide(\"\(.*\)\");/u\"\1\";/g" $file
   sed -i "" "s/$Utf16StringFor(\"\(.*\)\");/u\"\1\";/g" $file
 done
-<<<<<<< HEAD
-
-=======
->>>>>>> origin
