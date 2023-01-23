@@ -1,5 +1,5 @@
 # Linux-practise
-This is solutions to some tasks for practicing knowledge of operating systems like Unix.
+This is my solutions to some tasks for practicing knowledge of operating systems like Unix.
 ## Location
 - [File system](https://github.com/NJaroslav/Linux-practise/tree/main/file_system)
 - [Сommand shell](https://github.com/NJaroslav/Linux-practise/tree/main/bash_1)
