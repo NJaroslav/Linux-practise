@@ -45,13 +45,13 @@ main(int argc, char *argv[]){
         for(i = 1; i < argc; i++){
             if(cat(argv[i]) == -1){
                 perror("cat error");
-                code = -1;
+                code = 1;
                 continue;
             }
         }
     } else {
         if(cat_read_write(STDIN_FILENO) == -1){
-            code = -1;
+            code = 1;
         }
     }
     return code;
