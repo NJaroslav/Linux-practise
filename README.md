@@ -7,3 +7,4 @@ This is my solutions to some tasks for practicing knowledge of operating systems
 - [Cat implementation](https://github.com/NJaroslav/Linux-practise/tree/main/io)
 - [Processes](https://github.com/NJaroslav/Linux-practise/tree/main/processes)
 - [Threads](https://github.com/NJaroslav/Linux-practise/tree/main/threads)
+- [Memory](https://github.com/NJaroslav/Linux-practise/tree/main/Memory)
