@@ -9,5 +9,6 @@
 int main() {
     char* ptr = malloc(SIZE * sizeof(char));
     getchar();
+    free(ptr);
     exit(EXIT_SUCCESS);
 }
